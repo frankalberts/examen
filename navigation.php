@@ -22,6 +22,9 @@
                           <li class='nav-item'>
                           <a class='nav-link' href='factuurklant.php'>Bon voor klant</a>
                           </li>
+                          <li class='nav-item'>
+                          <a href='weekoverzicht.php' class='nav-link'>Weekomzet</a>
+                          </li>
                           ";
             }
             ?>

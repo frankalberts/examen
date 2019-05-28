@@ -15,6 +15,7 @@ $db = $database->getConnection();
                 <a href="reserveringen.php" class="list-group-item">Reserveringen</a>
                 <a href="overzichtbarman.php" class="list-group-item">Overzicht Barman</a>
                 <a href="factuurklant.php" class="list-group-item">Bon voor klant</a>
+                <a href="weekoverzicht.php" class="list-group-item">Weekomzet</a>
             </div>
 
         </div>
