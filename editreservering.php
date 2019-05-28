@@ -51,6 +51,14 @@ if(isset($_POST['reservatie'])){
     if(isset($_GET['ID'])){
         $deleteafterupdate = 1;
         $todeleteid = $_GET['ID'];
+    }else
+    {
+        $checkforreservering = "SELECT * FROM reserveringinfo WHERE datum = '". $datum . "' AND tijd = '" . $tijd . "' AND tafel = '" . $tafel . "'";
+        $stmt = $db->query($checkforreservering);
+        if($stmt->rowCount() != 0){
+            echo "<script>alert('De reservering op deze tijd, datum en tafel is niet mogelijk. Er is al een reservering aanwezig voor de ingevulde tijd, datum en tafel.'); location='reserveringen.php';</script>";
+            return;
+        }
     }
     if(isset($_POST['gebruikt'])){
         $gebruikt = 1;

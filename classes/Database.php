@@ -9,9 +9,9 @@
 class Database
 {
     private $host = "localhost";
-    private $db_name = "fraalb_excellenttaste";
-    private $username = "fraalb_12";
-    private $password = "welkom";
+    private $db_name = "excellenttaste";
+    private $username = "root";
+    private $password = "";
     public $conn;
 
     public function getConnection(){
